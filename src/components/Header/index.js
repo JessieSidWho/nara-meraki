@@ -56,7 +56,7 @@ const Header = ({ t }) => {
     <S.Header>
       <S.Container>
         <Row type="flex" justify="space-between" gutter={20}>
-          <S.LogoContainer to="/" aria-label="homepage">
+          <S.LogoContainer to={process.env.PUBLIC_URL + '/'} aria-label="homepage">
             <SvgIcon src="nm.svg" />
           </S.LogoContainer>
           <S.NotHidden>

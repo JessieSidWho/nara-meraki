@@ -112,7 +112,7 @@ const Footer = ({ t }) => {
               align="middle"
               style={{ paddingTop: "3rem" }}
             >
-              <S.NavLink to="/">
+              <S.NavLink to={process.env.PUBLIC_URL + '/'}>
                 <S.LogoContainer>
                   <SvgIcon
                     src="nm.svg"
