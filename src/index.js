@@ -8,7 +8,7 @@ import i18n from "./translation";
 import * as serviceWorker from "./serviceWorker";
 
 const App = () => (
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <I18nextProvider i18n={i18n}>
       <Router />
     </I18nextProvider>
