@@ -16,6 +16,7 @@ const Router = () => {
         {routes.map((routeItem) => {
           return (
             <Route
+              basename={process.env.PUBLIC_URL}
               key={routeItem.component}
               path={routeItem.path}
               exact={routeItem.exact}
